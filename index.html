@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flea Market Scavenger Hunt</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>🧩 Flea Market Scavenger Hunt</h1>
+    <div id="difficulty-selection">
+      <p>Select your challenge:</p>
+      <div class="buttons">
+        <button onclick="startHunt('easy')">Easy</button>
+        <button onclick="startHunt('medium')">Medium</button>
+        <button onclick="startHunt('hard')">Hard</button>
+        <button onclick="startHunt('veryhard')">Very Hard</button>
+      </div>
+    </div>
+    <div id="hunt" style="display:none;">
+      <h2 id="hunt-title"></h2>
+      <ul id="hunt-list"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
